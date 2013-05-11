@@ -1,0 +1,8 @@
+latex template for slides using beamer
+
+Usage:
+1. update slides.tex 
+2. type make command in Terminal (see Makefile for more options)
+3. open slides.pdf
+
+Dr. Zhi
