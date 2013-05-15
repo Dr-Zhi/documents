@@ -1,0 +1,252 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{xcolor}
+\newcommand{\inblack}{\color{black}}
+
+\usepackage{nth}
+\usepackage{enumerate}
+
+\usepackage[normalem]{ulem}
+\pagestyle{empty}
+
+% personal data
+\name{Yanling}{Zhi}
+\title{\normalsize A Software Engineer and Researcher} % optional, remove / comment the line if not wanted
+
+%5F, Building A, West Lake International Plaza,  
+\address{5F, Building A, 391 Wen'er Road}{Hangzhou, Zhejiang, China}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+86~18072757700}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{i@dr-zhi.com}   % optional, remove / comment the line if not wanted
+\homepage{www.dr-zhi.com}  % optional, remove / comment the line if not wanted
+\social[github]{Dr-Zhi}  % optional, remove / comment the line if not wanted
+\social[linkedin]{DrYanlingZhi} % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}  % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{face}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{The future is not written; there is no fate but what we make for ourselves.} % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{Sep. 2007 -- June 2012}{Ph.D.}{State-Key Lab. of ASIC \& System, Fudan University}{Shanghai}{GPA \textit{$3.78/4$}}{
+  \begin{itemize}
+    \item Thesis: Efficient Algorithms for Critical Problems in Clock Skew Scheduling;
+    \item Supervisors: Prof. Hai Zhou (Northwestern University) and Wai-Shing Luk (Fudan University).
+  \end{itemize}
+}  % arguments 3 to 6 can be left empty
+\cventry{Sep. 2003 -- June 2007}{B.E.}{Electrical Engineering, Wuhan University}{Wuhan}{GPA \textit{$3.63/4$}}{
+  \begin{itemize}
+    \item Graduated with Rank $\nth{1}$ out of $77$, and thereafter joined State-Key Lab. of ASIC \& System with recommendation.
+  \end{itemize}
+}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{July 2012 -- Present}{Senior Software Engineer}{MicroStrategy}{Hangzhou}{}{Worked on \httplink[MicroStrategy Mobile for iPad/iPhone (http://www.microstrategy.com/mobile)]{www.microstrategy.com/mobile/}. %\newline{} Featured Work:
+\begin{itemize}%
+\item Participated in the entire lifecycle of new feature development. 
+\item Focused on building prototpypes, integrating with the product, testing and fixing issues.
+\item Effectively communicated and collaborated with managers, architects and cross-team engineers in both China and US.
+\item Featured work includes: 
+  \begin{itemize}%
+  \item Navigation document (tab bar);
+  \item Panel caching;
+  \item Resetting to first panel; 
+  \end{itemize}
+\item Grew to be a mature programmer on Objective-C/iOS in three months (from a green hand).
+\end{itemize}
+}
+
+\cventry{Jan 2011 -- Dec. 2011}{R\&D Engineer Intern (Part-time)}{Verigy}{Shanghai}{}{Worked on algorithms design for Memory Redundancy Repair product
+\begin{itemize}
+  \item Formally formulate the memory redundancy repair problem, and proposed new algorithms based on perfect matching in bipartite graphs; 
+  \item Implemented a prototype to validate the efficiency of the algorithms;
+  \item Worked closely with engineers in both China and Germany.
+\end{itemize}
+}
+
+
+\cventry{Aug. 2009 -- May 2010}{R\&D Engineer Intern}{Verigy}{Shanghai}{}{
+Worked on parallel computing for the product MTL.%\newline{}
+\begin{itemize}
+  \item Designed multithreading algorithms and implemented prototypes based on C++ Library Threading Building Blocks;
+  \item Remarkable speedup was achieved on industrial benchmarks;
+  \item The work was integrated into the products of next generation;
+  \item Won the 2010 Brilliance of Innovation Honorable Mention award in Verigy. 
+\end{itemize} 
+}
+
+\subsection{Academic}
+
+\cventry{Dec. 2009 -- Mar. 2012}{Researched on clock skew optimization algorithms}{}{}{}{
+\begin{itemize}
+  \item Proposed novel efficient algorithms based on network flow algorithms for multi-domain clock skew scheduling and yield-driven clock skew scheduling;
+  \item Programmed extensively using C/C++ in building prototypes to validate the efficiency of algorithms;
+  \item Acquired solid skills in \textbf{algorithms research and development}, and paper writing;
+  \item Publications as first author on world-class conferences/journals in Electronic Design Automation field (\httplink[http://scholar.google.com/citations?user=w-DiTg4AAAAJ]{scholar.google.com/citations?user=w-DiTg4AAAAJ}):
+  \begin{enumerate}%[{[}1{]}]
+    \item \textbf{Yanling Zhi}, Wai-Shing Luk, Hai Zhou and Xuan Zeng, Smipref: An efficient method for multi-domain clock skew scheduling. \emph{Integration, the VLSI Journal}, 2012.
+    \item \textbf{Yanling Zhi}, Wai-Shing, Luk, Yi Wang, Changhao Yan and Xuan Zeng, Yield-driven clock skew scheduling for arbitrary distributions of critical path delays. \emph{IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences}, 95(12):2172--2181, 2012.
+    \item \textbf{Yanling Zhi}, Wai-Shing Luk, Hai Zhou, Changhao Yan, Hengliang Zhu and Xuan Zeng, An efficient algorithm for multi-domain clock skew scheduling. In \emph{IEEE Design, Automation \& Test in Europe Conference \& Exhibition (DATE) 2011}, pages 1--6, France, 2011.
+    \item \textbf{Yanling Zhi}, Hai Zhou and Xuan Zeng. A practical method for multi-domain clock skew optimization. In \emph{16th IEEE Asia and South Pacific Design Automation Conference (ASP-DAC)}, pages 521--526. Japan, 2011.
+  \end{enumerate}
+\end{itemize} 
+}
+
+\cventry{July 2008 -- Nov. 2009}{Researched on formal verification algorithms}{}{}{}{
+\begin{itemize}
+  \item Worked on sequential equivalence checking problems;
+  \item Proposed a new algorithm based on bounded model checking using covering relations among signals in sequential circuits;
+  \item Built prototypes to verify the efficiency of the algorithm.
+\end{itemize} 
+}
+
+\cventry{Sep. 2007 -- July 2008}{Developed PhysicalCMP simulation tools}{}{}{}{
+\begin{itemize}
+  \item Worked as one of the core programers in the entire development process;
+  \item Designed and implemented graphical user interface (using Qt Library) and chilp layout information extraction algorithms in C++; 
+  \item The work was later integrated into National Major Science \& Technology Project in the Eleventh Five-Year period;
+\end{itemize} 
+}
+
+\section{Professional Skills}
+\cvlistitem{Proficient in C/C++ programming (5+ years experience);}
+\cvlistitem{Experienced in object-oriented programming, parallel computing on multithreading platforms;}
+\cvlistitem{Experienced in Objective-C, iOS programming ($0.8$ year experience);}
+\cvlistitem{Skilled in algorithms design;}
+\cvlistitem{Familiar with Matlab programming and shell;}
+\cvlistitem{Interested in design patterns.}
+
+% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Languages}
+\cvitem{English}{Fluent in both spoken and written English. CET-6: $93/100$, TOEFL: $617/677$.}
+\cvitem{Chinese}{Native.}
+
+
+% \cvitemwithcomment{C/C++}{Professional}{}
+
+% \section{Interests}
+% \cvitem{hobby 1}{Description}
+
+\section{Awards and Honors}
+\cvline{2011}{Won the Intel Fellowship Winner award.}
+\cvline{2010}{Won the Brilliance of Innovation Honorable Mention award in Verigy.}
+\cvline{2008-2010}{Won Academic Scholarship in Fudan University every year.}
+\cvline{2007}{Joined State-Key Lab. of ASIC \& System without taking post-graduate entrance examination, and also won the Entrance Scholarship in Fudan University.}
+\cvline{2003-2007}{Won first class People Scholarship and "Merit Student" title in Wuhan University every year; won LG Electronics Scholarship in 2005.}
+
+\section{Community and Contacts}
+\cvline{Home page:}{\httplink[http://Dr-Zhi.com]{Dr-Zhi.com} (personal blog)}
+\cvline{GitHub:}{\link[https://github.com/Dr-Zhi]{https://github.com/Dr-Zhi}}
+\cvline{LinkedIn:}{\httplink[http://www.linkedin.com/in/DrYanlingZhi]{www.linkedin.com/in/DrYanlingZhi}}
+\cvline{Email:}{\emaillink[]{i@dr-zhi.com}}   % optional, remove / comment the line if not wanted
+
+\section{Self Evaluation}
+\cvline{}{A software developer and researcher, who is always willing and eager to learn new technologies, and strives for perfection in working naturally.}
+
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% \section{References}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels:
+%\renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+
+
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
